@@ -1,34 +1,55 @@
-# Decision — <Title>
+# Decision — <Short Decision Title>
 
-**Status:** Proposed | Accepted | Superseded
+| Field | Value |
+| --- | --- |
+| Status | Proposed / Accepted / Superseded |
+| Date | YYYY-MM-DD |
+| Related | <PRD / issue / architecture / previous decision> |
 
-> **Use this when:** the decision is important enough that someone may later ask why it was made.
->
-> **Skip this when:** the choice is trivial, easy to reverse, or obvious from existing documentation.
->
-> **Delete sections that do not help.**
+> **Decision:** <one sentence stating what was chosen>
+
+<!-- Record decisions that are expensive, important, or likely to be questioned later. -->
 
 ## Context
 
-What situation requires a decision?
+<What happened or what constraint requires this decision?>
+
+### Requirements / Constraints
+
+- <Must be true>
+- <Must be true>
 
 ## Options
 
-What realistic options were considered?
-
-- ...
-- ...
+| Option | Advantages | Trade-offs |
+| --- | --- | --- |
+| **A — <Option>** | <benefit> | <cost/risk> |
+| **B — <Option>** | <benefit> | <cost/risk> |
+| **C — <Option, if needed>** | <benefit> | <cost/risk> |
 
 ## Decision
 
-What did we choose?
+**Choose:** <Option>
 
-## Why
-
-Why does this option fit the current constraints better than the alternatives?
+<Short explanation of why it best fits the current requirements and constraints.>
 
 ## Consequences
 
-What do we gain, lose, or need to accept because of this decision?
+### Gains
 
-- ...
+- <What becomes better/easier>
+
+### Trade-offs
+
+- <What becomes worse/harder or what we accept>
+
+### Follow-up
+
+- [ ] <Required follow-up action>
+- [ ] <Required follow-up action>
+
+## Revisit If
+
+<!-- Delete if the decision is unlikely to need explicit reconsideration. -->
+
+- <Condition that would make this decision worth reviewing again>
