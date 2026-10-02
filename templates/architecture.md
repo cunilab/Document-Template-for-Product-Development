@@ -1,39 +1,65 @@
-# Architecture — <Product or System>
+# Architecture — <Product / System>
 
-> **OPTIONAL**
->
-> **Use this when:** the system has enough components, boundaries, integrations, or data flow that its structure is not obvious.
->
-> **Skip this when:** the codebase or product documentation already makes the system easy to understand.
->
-> **Prefer diagrams over long prose when a diagram explains the system better.**
->
-> **Delete sections that do not help.**
+| Field | Value |
+| --- | --- |
+| Scope | <whole product / service / subsystem> |
+| Last updated | YYYY-MM-DD |
+
+<!-- Use this only when system structure is no longer obvious from the code or README. -->
 
 ## Overview
 
-Describe the system at a high level.
+<3–5 sentences describing the system, its main boundaries, and the most important architectural idea.>
+
+## System Context
+
+<!-- Replace this small example with the real system. Keep the diagram high-level. -->
+
+```mermaid
+flowchart LR
+    User --> App
+    App --> Database[(Database)]
+    App --> External[External Service]
+```
 
 ## Components
 
-What are the important parts and what does each one own?
+| Component | Responsibility | Owns / Uses |
+| --- | --- | --- |
+| <Web / App / Device> | <what it does> | <state/data/resources> |
+| <API / Service> | <what it does> | <state/data/resources> |
+| <Database / Storage> | <what it stores> | <important data> |
 
-- ...
+## Main Flow
 
-## Data Flow
+<!-- Describe the important path, not every internal call. -->
 
-How does important data or control move through the system?
+1. <Actor/component> sends <request/event>.
+2. <Component> validates/processes it.
+3. <Component> reads/writes <data>.
+4. <Result/event> returns to <actor/component>.
 
-Add a small diagram if useful.
+## Interfaces
 
-## External Dependencies
+<!-- Delete if the system has no important integration boundaries. -->
 
-What external systems materially affect the product?
+| From | To | Interface | Purpose |
+| --- | --- | --- | --- |
+| <Component> | <Component/service> | HTTP / event / serial / file | <why they communicate> |
 
-- ...
+## Data
 
-## Important Constraints
+| Data | Owner | Storage | Notes |
+| --- | --- | --- | --- |
+| <Important data> | <component> | <database/storage> | <retention, format, constraint> |
 
-What technical constraints shape the architecture?
+## Constraints
 
-- ...
+- **<Constraint>** — <how it shapes the architecture>
+- **<Constraint>** — <how it shapes the architecture>
+
+## Key Decisions
+
+<!-- Link to decision records instead of repeating their full reasoning. -->
+
+- [<Decision title>](decisions/001-example.md) — <one-line consequence>
