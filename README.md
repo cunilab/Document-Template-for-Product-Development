@@ -10,8 +10,9 @@ Do not copy every template into every product. Start small. Add documentation wh
 
 ## Start Here
 
-For most new products, begin with:
+For most products, begin with:
 
+- [README](templates/readme.md) — the entry point: what the product is and how to start.
 - [Product](templates/product.md) — why the product should exist.
 - [Roadmap](templates/roadmap.md) — what matters now and what may come next.
 
@@ -21,6 +22,7 @@ Then add other documents only when a real need appears.
 
 | Situation | Template | Need |
 | --- | --- | --- |
+| Need a clear project/product entry point | [README](templates/readme.md) | Core |
 | Starting or clarifying a product | [Product](templates/product.md) | Core |
 | Need shared direction and priorities | [Roadmap](templates/roadmap.md) | Core |
 | Feature is complex, ambiguous, risky, or needs alignment | [PRD](templates/prd.md) | As needed |
@@ -44,6 +46,8 @@ If every answer is **no**, do not create the document.
 ## Recommended Flow
 
 ```text
+README --> entry point
+
 Product
   |
   +--> Roadmap
@@ -61,7 +65,7 @@ running service    --> Operations
 real release       --> Launch
 ```
 
-A roadmap is not a task list. A PRD is not required for every change. A decision record is not meeting notes.
+A README is not full product documentation. A roadmap is not a task list. A PRD is not required for every change. A decision record is not meeting notes.
 
 ## How to Use a Template
 
@@ -87,6 +91,8 @@ The templates are starting points, not forms that must be completed.
 A small product might need only:
 
 ```text
+README.md
+
 docs/
 ├── product.md
 └── roadmap.md
@@ -95,6 +101,8 @@ docs/
 A product with more complexity might grow into:
 
 ```text
+README.md
+
 docs/
 ├── product.md
 ├── roadmap.md
