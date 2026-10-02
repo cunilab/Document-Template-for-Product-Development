@@ -1,66 +1,73 @@
 # <Product Name>
 
-> **Use this when:** you need a clear entry point that explains what the product is, why it matters, and how to start using or exploring it.
->
-> **Keep it short.** Link to deeper documentation instead of putting everything here.
->
-> **Delete sections that do not help.**
+> <One sentence: what it is + why someone should care.>
 
-<One or two sentences describing the product and its main value.>
+<!-- Keep this page as the entry point. Link to deeper docs instead of duplicating them here. -->
 
-## Why
+**Status:** `In development` · **Version:** `v0.1`
 
-What problem does this product solve, and for whom?
+## Overview
 
-## What It Does
+<2–4 sentences: who this is for, what problem it solves, and the main value.>
 
-- ...
-- ...
-- ...
+## Features
+
+- **<Feature>** — <what the user gets>
+- **<Feature>** — <what the user gets>
+- **<Feature>** — <what the user gets>
 
 ## Quick Start
 
-Show the shortest path to try or run the product.
+### Requirements
 
-```bash
-# example
+- <Requirement, e.g. Node.js 22+>
+- <Requirement, e.g. Docker>
+
+### Install
+
+```sh
+git clone <repository-url>
+cd <project>
+<install-command>
 ```
+
+### Run
+
+```sh
+<run-command>
+```
+
+Open: `<http://localhost:xxxx>`
 
 ## Usage
 
-Show the most important way to use the product.
+<!-- Show the shortest useful example. Delete this section if Quick Start already explains enough. -->
 
 ```text
-Example usage
+<Example command, workflow, or usage>
 ```
 
 ## Documentation
 
-Link only to documentation that exists.
+<!-- Link only to documents that exist. -->
 
-- [Product](docs/product.md)
-- [Roadmap](docs/roadmap.md)
+| Document | Purpose |
+| --- | --- |
+| [Product](docs/product.md) | Problem, users, goals, scope |
+| [Roadmap](docs/roadmap.md) | Releases and planned work |
+| [Architecture](docs/architecture.md) | System structure and data flow |
 
-## Status
+## Project Status
 
-State the current product status if useful.
+**Current:** <what is usable now>  
+**Next:** <most important next milestone>
 
-Examples:
-
-- Experimental
-- In development
-- Beta
-- Stable
-- Maintenance
+<!-- Optional sections below. Delete anything the project does not need. -->
 
 ## Contributing
-
-Add this section only if contributions are welcome.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
-State the license or link to the license file.
-
-See [LICENSE](LICENSE).
+<License name>. See [LICENSE](LICENSE).
