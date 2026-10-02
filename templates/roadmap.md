@@ -1,33 +1,63 @@
-# Roadmap — <Product>
+# Roadmap — <Product Name>
 
-> **Use this when:** people need a shared view of current and future product priorities.
->
-> **Skip this when:** a product is too small to need more than a short task list.
->
-> **Do not use this as a backlog.** Keep issues and implementation tasks elsewhere.
->
-> **Delete sections that do not help.**
+<1–2 sentences explaining the order of priorities and what the roadmap optimizes for.>
 
-## Now
+<!--
+Use releases, versions, phases, or named milestones—whatever fits the product.
+Keep product outcomes here. Keep small implementation tasks in issues/backlog.
+Recommended status:
+✅ shipped
+🚧 active
+(no icon) planned
+-->
 
-What outcomes matter now?
+**Current focus:** <v0.2 / Phase 2 / milestone name>
 
-- ...
+### ✅ v0.1 — <Foundation / First usable version>
 
-## Next
+> **Outcome:** <what became possible for the user or product>
 
-What are likely next priorities?
+- [x] **<Capability area>**
+  - [x] <important delivered capability>
+  - [x] <important delivered capability>
+- [x] **<Capability area>** — <short result>
+- [x] <important milestone>
 
-- ...
+<!-- Optional:
+Dropped: <item> — <short reason>
+-->
+
+### 🚧 v0.2 — <Current milestone>
+
+> **Outcome:** <what this milestone should achieve>
+
+- [x] <already completed item>
+- [ ] **<Capability area>**
+  - [ ] <important capability>
+  - [ ] <important capability>
+- [ ] **<Capability area>** — <short intended result>
+- [ ] <important milestone>
+
+### v0.3 — <Next milestone>
+
+> **Outcome:** <why this milestone exists>
+
+- [ ] **<Capability area>**
+  - [ ] <important capability>
+  - [ ] <important capability>
+- [ ] <important milestone>
+
+### v1.0 — <Major release / target state>
+
+> **Outcome:** <what makes this release meaningfully complete>
+
+- [ ] <major capability>
+- [ ] <major capability>
+- [ ] <major capability>
 
 ## Later
 
-What directions may become important later?
+<!-- Ideas worth preserving but not committed to a release yet. Keep this short. -->
 
-- ...
-
-## Done
-
-Keep only meaningful completed milestones.
-
-- ...
+- <Possible future direction>
+- <Possible future direction>
