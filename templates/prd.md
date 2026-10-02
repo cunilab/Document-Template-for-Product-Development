@@ -1,63 +1,82 @@
-# PRD — <Feature or Initiative>
+# PRD — <Feature / Initiative>
 
-> **Use this when:** a feature is complex, ambiguous, risky, expensive to change, or needs alignment across people.
->
-> **Skip this when:** a small issue or task already communicates the change clearly.
->
-> **Delete sections that do not help.**
+| Field | Value |
+| --- | --- |
+| Status | Draft / Ready / In Progress / Shipped |
+| Owner | <name or team> |
+| Target | <release / milestone> |
+| Related | <roadmap / issue / design link> |
+
+<!-- Use a PRD only when a feature needs more clarity than an issue can provide. -->
+
+## Summary
+
+<2–4 sentences: what is being built, for whom, and why now.>
 
 ## Problem
 
-What problem requires this work?
+**User:** <who has the problem>
+
+**Current behavior:** <what happens today>
+
+**Problem:** <what is missing or broken>
+
+**Impact:** <why it matters>
 
 ## Goal
 
-What outcome should this feature create?
-
-## User
-
-Who needs it?
+- [ ] <Primary outcome>
+- [ ] <Secondary outcome, if needed>
 
 ## Scope
 
-What is included?
-
-- ...
-
-## Requirements
-
-What must be true?
-
-- ...
-
-## Non-Goals
-
-What is intentionally excluded?
-
-- ...
+| In scope | Out of scope |
+| --- | --- |
+| <Included behavior> | <Explicitly excluded behavior> |
+| <Included behavior> | <Explicitly excluded behavior> |
 
 ## User Flow
 
-Describe only the important flow.
+1. User <starts here>.
+2. User <takes action>.
+3. System <responds>.
+4. User <reaches desired outcome>.
 
-1. ...
-2. ...
-3. ...
+## Requirements
+
+### R1 — <Capability>
+
+- [ ] <Required behavior>
+- [ ] <Required behavior>
+- [ ] <Failure/validation behavior, if important>
+
+### R2 — <Capability>
+
+- [ ] <Required behavior>
+- [ ] <Required behavior>
+
+<!-- Add R3+ only when needed. Requirements should describe behavior, not implementation unless implementation is itself a constraint. -->
 
 ## Edge Cases
 
-List only cases that materially affect behavior or implementation.
+| Case | Expected behavior |
+| --- | --- |
+| <Important edge case> | <What should happen> |
+| <Failure or empty state> | <What should happen> |
 
-- ...
+## Constraints
+
+<!-- Delete if there are no meaningful constraints. -->
+
+- <Performance, platform, compatibility, legal, cost, or technical constraint>
 
 ## Success
 
-How will we know the feature worked?
-
-- ...
+| Signal | Target |
+| --- | --- |
+| <What should improve or become possible> | <target or observable result> |
 
 ## Open Questions
 
-What still needs a decision or validation?
-
-- ...
+- [ ] <Question that blocks or may change the design>
+- [ ] <Question that still needs validation>
