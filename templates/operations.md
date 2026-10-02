@@ -1,53 +1,83 @@
-# Operations — <Product or Service>
+# Operations — <Product / Service>
 
-> **OPTIONAL**
->
-> **Use this when:** the product must be deployed, monitored, recovered, maintained, or kept available after development.
->
-> **Skip this when:** the product has no meaningful runtime or operational responsibility.
->
-> **Document actions people may actually need during operation.**
->
-> **Delete sections that do not help.**
+| Field | Value |
+| --- | --- |
+| Environment | Production / Staging / Local |
+| Service | <name> |
+| Owner | <person/team> |
+| Production URL | <URL or N/A> |
 
-## Deployment
+<!-- Use this when someone may need to deploy, monitor, recover, or troubleshoot the product. Do not put secrets in this file. -->
 
-How is the product deployed or distributed?
+## Run / Deploy
+
+### Start
+
+```sh
+<command to start or deploy>
+```
+
+### Verify
+
+```sh
+<command or URL used to verify success>
+```
+
+**Expected:** <healthy result>
 
 ## Configuration
 
-What runtime configuration matters?
+| Setting | Required | Source | Purpose |
+| --- | --- | --- | --- |
+| `<VARIABLE>` | Yes | Secret/env/config | <what it controls> |
+| `<VARIABLE>` | No | Env/config | <what it controls> |
 
-- ...
+## Health & Monitoring
 
-Do not put secrets in this document.
+| Signal | Healthy | Where to check |
+| --- | --- | --- |
+| <Health endpoint> | <expected status> | <URL/tool> |
+| <Error rate/logs> | <expected condition> | <tool/location> |
+| <Critical dependency> | <expected condition> | <tool/location> |
 
-## Health and Monitoring
+## Backup & Recovery
 
-How can someone tell whether the product is working?
+<!-- Delete if the product has no persistent state. -->
 
-- ...
+| Item | Backup | Restore |
+| --- | --- | --- |
+| <Database/data> | <frequency/location> | <short restore method> |
+| <Files/config> | <frequency/location> | <short restore method> |
 
-## Backup and Recovery
+### Recovery Check
 
-What needs backup? How can it be restored?
-
-- ...
+- [ ] Restore process is documented
+- [ ] A restore has been tested
+- [ ] Critical data loss window is understood
 
 ## Common Problems
 
-What failures are important enough to document?
+### <Problem / symptom>
 
-### <Problem>
+**Symptoms**
+- <what someone sees>
 
-**Symptoms:** ...
+**Check**
+```sh
+<diagnostic command or check>
+```
 
-**Check:** ...
+**Fix**
+1. <action>
+2. <action>
+3. Verify <healthy condition>.
 
-**Recovery:** ...
+## Incident Quick Steps
 
-## Ownership
+1. Confirm user impact.
+2. Check recent deploys and critical dependencies.
+3. Stop or roll back the harmful change if needed.
+4. Restore service/data if needed.
+5. Record the cause and follow-up work.
 
-Who is responsible when something goes wrong?
-
-- ...
+<!-- Add product-specific steps when generic ones are insufficient. -->
