@@ -1,94 +1,58 @@
 # Product Development Document Templates
 
-A small, reusable set of templates for documenting products without turning documentation into a project of its own.
+Reusable Markdown templates for product documentation without turning documentation into another product.
 
 ## Principle
 
-**Create a document only when it prevents confusion, preserves an important decision, coordinates work, or reduces meaningful risk.**
+**Create a document only when it makes the product easier to understand, decide, build, release, or operate.**
 
-Do not copy every template into every product. Start small. Add documentation when the product needs it.
+A tiny product may need only a README. Add documents as complexity appears.
 
-## Start Here
+## How These Templates Work
 
-For most products, begin with:
+The templates are designed to be **copied and filled in**, not used as question lists.
 
-- [README](templates/readme.md) — the entry point: what the product is and how to start.
-- [Product](templates/product.md) — why the product should exist.
-- [Roadmap](templates/roadmap.md) — what matters now and what may come next.
+- Visible Markdown shows the final document structure.
+- `<placeholders>` show what to replace.
+- `<!-- comments -->` give guidance but disappear when rendered.
+- Checklists show progress or verifiable requirements.
+- Tables are used where comparison or structured facts are clearer than prose.
+- Delete any section that adds no value.
 
-Then add other documents only when a real need appears.
+## Which Template Do I Need?
 
-## Which document do I need?
-
-| Situation | Template | Need |
-| --- | --- | --- |
-| Need a clear project/product entry point | [README](templates/readme.md) | Core |
-| Starting or clarifying a product | [Product](templates/product.md) | Core |
-| Need shared direction and priorities | [Roadmap](templates/roadmap.md) | Core |
-| Feature is complex, ambiguous, risky, or needs alignment | [PRD](templates/prd.md) | As needed |
-| Important decision and reasoning should survive | [Decision](templates/decision.md) | As needed |
-| System structure is difficult to understand from code/product docs | [Architecture](templates/architecture.md) | Optional |
-| Product has meaningful security risks | [Security](templates/security.md) | Optional |
-| Product must keep running after release | [Operations](templates/operations.md) | Optional |
-| Preparing a coordinated release | [Launch](templates/launch.md) | Optional |
+| Situation | Template |
+| --- | --- |
+| People need to understand or run the project | [README](templates/readme.md) |
+| Product purpose, users, goals, or boundaries are becoming unclear | [Product](templates/product.md) |
+| Product has multiple releases, phases, or meaningful milestones | [Roadmap](templates/roadmap.md) |
+| A feature is too complex or ambiguous for a normal issue | [PRD](templates/prd.md) |
+| An important choice and its reasoning should survive | [Decision](templates/decision.md) |
+| System structure is difficult to understand from code alone | [Architecture](templates/architecture.md) |
+| Product has meaningful security risks | [Security](templates/security.md) |
+| Someone must deploy, monitor, recover, or troubleshoot it | [Operations](templates/operations.md) |
+| A release needs coordinated readiness and recovery | [Launch](templates/launch.md) |
 
 ## Documentation Test
 
 Before creating a document, ask:
 
-1. Will it clarify **why or what** we are building?
-2. Will it help people **coordinate**?
-3. Will it preserve information we are likely to need later?
-4. Will it reduce meaningful product, technical, security, or operational risk?
+1. Will it clarify an important product or technical decision?
+2. Will someone use it to build, operate, review, or coordinate work?
+3. Will the information still matter after the current conversation or issue is gone?
+4. Would losing this information create confusion, repeated work, or meaningful risk?
 
 If every answer is **no**, do not create the document.
 
-## Recommended Flow
+## Typical Growth
+
+### Small project
 
 ```text
-README --> entry point
-
-Product
-  |
-  +--> Roadmap
-        |
-        +--> PRD (when a feature needs specification)
-              |
-              +--> Build
-
-Important decision? --> Decision record
-
-Add only when needed:
-complex system     --> Architecture
-security concerns  --> Security
-running service    --> Operations
-real release       --> Launch
+README.md
 ```
 
-A README is not full product documentation. A roadmap is not a task list. A PRD is not required for every change. A decision record is not meeting notes.
-
-## How to Use a Template
-
-1. Copy only the template you need.
-2. Rename it for the product or feature.
-3. Delete sections that do not help.
-4. Keep answers short unless detail changes a decision.
-5. Update the document when reality changes.
-6. If a document becomes stale and no longer provides value, fix it or remove it.
-
-## Core Rule for Every Template
-
-Each template contains:
-
-> **Use this when:** the document provides clear value.  
-> **Skip this when:** a smaller artifact already communicates enough.  
-> **Delete sections that do not help.**
-
-The templates are starting points, not forms that must be completed.
-
-## Suggested Product Repository
-
-A small product might need only:
+### Product with direction
 
 ```text
 README.md
@@ -98,7 +62,7 @@ docs/
 └── roadmap.md
 ```
 
-A product with more complexity might grow into:
+### Product with more complexity
 
 ```text
 README.md
@@ -114,5 +78,39 @@ docs/
 ├── security.md
 └── operations.md
 ```
+
+Add `launch.md` when a release needs explicit launch coordination.
+
+## Recommended Flow
+
+```text
+README
+  |
+  +--> Product (when purpose/scope needs to be explicit)
+         |
+         +--> Roadmap (when there are multiple milestones)
+                |
+                +--> PRD (when a feature needs deeper specification)
+                       |
+                       +--> Build
+
+Important choice?     --> Decision
+Complex system?       --> Architecture
+Meaningful risk?      --> Security
+Running service?      --> Operations
+Coordinated release?  --> Launch
+```
+
+## Rules
+
+- **Do not create every template.**
+- **Do not duplicate the same information across documents.**
+- **Roadmap = milestones and outcomes, not every task.**
+- **PRD = feature behavior and boundaries, not implementation diary.**
+- **Decision = why a choice was made, not meeting notes.**
+- **Architecture = important structure and flows, not every class/module.**
+- **Security = real risks and controls, not a generic compliance dump.**
+- **Operations = actions someone may actually need during production.**
+- **Delete stale documentation or update it.**
 
 **Documentation should grow with product complexity, not ahead of it.**
