@@ -1,41 +1,55 @@
-# Security — <Product or System>
+# Security — <Product / System>
 
-> **OPTIONAL**
->
-> **Use this when:** the product handles accounts, permissions, sensitive data, payments, secrets, devices, exposed APIs, or other meaningful security risks.
->
-> **Skip this when:** there is no meaningful security information to preserve here or it is already managed by an appropriate security process.
->
-> **Focus on realistic risks, not a generic checklist.**
->
-> **Delete sections that do not help.**
+| Field | Value |
+| --- | --- |
+| Scope | <product/service/subsystem> |
+| Last reviewed | YYYY-MM-DD |
 
-## Assets
+<!-- Use this when the product handles accounts, permissions, sensitive data, payments, secrets, devices, or exposed interfaces. Focus on real risks. -->
 
-What needs protection?
+## Security Goals
 
-- ...
+- Protect <data/resource> from <unauthorized action>.
+- Ensure only <actor> can <sensitive action>.
+- Preserve <availability/integrity/privacy requirement>.
 
-## Risks
+## Sensitive Data
 
-What could realistically go wrong?
+| Data | Sensitivity | Stored where | Retention |
+| --- | --- | --- | --- |
+| <e.g. account email> | Low / Medium / High | <location> | <duration> |
+| <e.g. access token> | High | <location> | <duration> |
 
-- ...
+## Access Model
 
-## Controls
+| Actor | Can access | Cannot access |
+| --- | --- | --- |
+| <User> | <own resources> | <other users' resources> |
+| <Admin/service> | <required access> | <explicit boundary> |
 
-What currently reduces those risks?
+## Risks & Controls
 
-- ...
+| Risk | Impact | Control | Status |
+| --- | --- | --- | --- |
+| <Unauthorized access> | <what could happen> | <auth/authorization/control> | Covered / Gap |
+| <Data exposure> | <what could happen> | <encryption/redaction/control> | Covered / Gap |
+| <Abuse or brute force> | <what could happen> | <rate limit/control> | Covered / Gap |
 
-## Access and Trust Boundaries
+## Security Checklist
 
-Who or what is trusted to do what?
+<!-- Keep only checks relevant to this product. -->
 
-- ...
+- [ ] Authentication is required where needed
+- [ ] Authorization is checked server-side / at the trusted boundary
+- [ ] Secrets are not stored in source code
+- [ ] Sensitive input is validated
+- [ ] Sensitive data is not unnecessarily logged
+- [ ] Dependencies and exposed interfaces have an update/review path
+- [ ] Recovery exists for compromised credentials or keys
 
 ## Known Gaps
 
-What security risks are accepted, unresolved, or planned for later?
+- [ ] **<Gap>** — <risk and planned mitigation>
+- [ ] **<Gap>** — <risk and planned mitigation>
 
-- ...
+<!-- An accepted gap should be explicit. Do not pretend every risk is solved. -->
