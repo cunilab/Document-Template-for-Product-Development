@@ -1,6 +1,6 @@
 ---
 id: <REPO>-EVID-NNN
-title: Validation and Evidence — <Scope>
+title: "Validation and Evidence — <Scope>"
 status: draft
 ---
 

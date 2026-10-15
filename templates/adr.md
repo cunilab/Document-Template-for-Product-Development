@@ -1,6 +1,6 @@
 ---
 id: <REPO>-ADR-NNNN
-title: ADR-NNNN: <Title>
+title: "ADR-NNNN: <Title>"
 status: draft
 ---
 

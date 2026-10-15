@@ -26,7 +26,7 @@ Every governed document — everything under `docs/` — starts with this YAML h
 ```yaml
 ---
 id: <REPO>-<AREA>-NNN
-title: <Matches the H1 heading>
+title: "<Matches the H1 heading>"
 status: draft
 ---
 ```
@@ -34,7 +34,7 @@ status: draft
 | Field | Rule |
 | --- | --- |
 | `id` | Permanent and unique: `WFT-ARCH-001`, `KVR-ADR-003`. Never reused, even if the file moves. |
-| `title` | Matches the H1 heading. |
+| `title` | Matches the H1 heading. **Keep it quoted** — an unquoted `:` breaks the header. |
 | `status` | `draft`, `proposed`, `accepted`, or `superseded`. No other fields. |
 
 - The root `README.md` is a short entry point and **has no header**. Governance starts when `docs/` exists.

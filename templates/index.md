@@ -1,6 +1,6 @@
 ---
 id: <REPO>-DOCS-001
-title: <Repository> Documentation Index
+title: "<Repository> Documentation Index"
 status: draft
 ---
 

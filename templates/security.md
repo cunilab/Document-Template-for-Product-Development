@@ -1,6 +1,6 @@
 ---
 id: <REPO>-SEC-001
-title: <Matches the H1 below>
+title: "<Matches the H1 below>"
 status: draft
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: <REPO>-GUIDE-001
-title: <Product Name> User Guide
+title: "<Product Name> User Guide"
 status: draft
 ---
 

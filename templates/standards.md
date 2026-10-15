@@ -1,6 +1,6 @@
 ---
 id: <REPO>-STD-001
-title: <Repository> Documentation Standards
+title: "<Repository> Documentation Standards"
 status: draft
 ---
 
@@ -17,7 +17,7 @@ Every governed document starts with this YAML header and nothing before it:
 ```yaml
 ---
 id: <REPO>-<AREA>-NNN
-title: <Matches the H1 heading>
+title: "<Matches the H1 heading>"
 status: draft
 ---
 ```
@@ -25,7 +25,7 @@ status: draft
 | Field | Rule |
 | --- | --- |
 | `id` | Permanent and unique, `<REPO>-<AREA>-NNN`. Never reused, even if the file moves. |
-| `title` | Matches the H1 heading. |
+| `title` | Matches the H1 heading. **Keep it quoted** — an unquoted `:` breaks the header. |
 | `status` | `draft`, `proposed`, `accepted` or `superseded`. |
 
 No other fields. When a document replaces another, say so in its first paragraph and set the old one to `superseded`.
