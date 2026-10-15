@@ -1,3 +1,9 @@
+---
+id: <REPO>-PRODUCT-001
+title: <Matches the H1 below>
+status: draft
+---
+
 # Product — <Product Name>
 
 > <One sentence: what the product does and the value it creates.>

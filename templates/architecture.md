@@ -1,3 +1,9 @@
+---
+id: <REPO>-ARCH-001
+title: <Matches the H1 below>
+status: draft
+---
+
 # Architecture — <Product / System>
 
 | Field | Value |
@@ -60,6 +66,6 @@ flowchart LR
 
 ## Key Decisions
 
-<!-- Link to decision records instead of repeating their full reasoning. -->
+<!-- Link to ADRs instead of repeating their full reasoning. -->
 
-- [<Decision title>](decisions/001-example.md) — <one-line consequence>
+- [ADR 0001 — <Decision title>](adr/0001-decision-slug.md) — <one-line consequence>

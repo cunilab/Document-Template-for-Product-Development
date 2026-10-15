@@ -1,3 +1,9 @@
+---
+id: <REPO>-PRD-001
+title: <Matches the H1 below>
+status: draft
+---
+
 # PRD — <Feature / Initiative>
 
 | Field | Value |

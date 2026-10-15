@@ -1,3 +1,9 @@
+---
+id: <REPO>-LAUNCH-001
+title: <Matches the H1 below>
+status: draft
+---
+
 # Launch — <Release / Product>
 
 | Field | Value |
