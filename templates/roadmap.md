@@ -1,3 +1,9 @@
+---
+id: <REPO>-ROADMAP-001
+title: "<Matches the H1 below>"
+status: draft
+---
+
 # Roadmap — <Product Name>
 
 <1–2 sentences explaining the order of priorities and what the roadmap optimizes for.>

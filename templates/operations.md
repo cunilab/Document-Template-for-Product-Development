@@ -1,3 +1,9 @@
+---
+id: <REPO>-OPS-001
+title: "<Matches the H1 below>"
+status: draft
+---
+
 # Operations — <Product / Service>
 
 | Field | Value |
